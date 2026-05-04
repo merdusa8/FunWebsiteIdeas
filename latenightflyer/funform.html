@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Late Night Flyer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Late Night</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="funform.html">FunForm</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Please fill out the form and let me know what you would like to do and let me know if you are planning
+                to go or not. Put any questions or other things your think would be fun to do in the comments!!! Thank
+                you!!! (:</h2>
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="b1dfc139-cb75-4bb4-97b8-921852a95a43">
+                    <label for="myName">* Name:</label><input type="text" name="myName" id="myName" required>
+                    <h4>Vote on a Movie (if you want a different movie, please put it in the comments):</h4>
+                    <br>
+                    <div class="idea">
+                        <label for="school"><input type="checkbox" id="school" name="school"
+                                value="School for Good and Evil"><span class="check"></span>School for Good and
+                            Evil</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="kpop"><input type="checkbox" id="kpop" name="Movie"
+                                value="K-Pop Demon Hunters"><span class="check"></span>K-Pop Demon Hunters</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="tangled"><input type="checkbox" id="tangled" name="Movie" value="Tangled"><span
+                                class="check"></span>Tangled</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="jumanji"><input type="checkbox" id="jumanji" name="Movie" value="Jumanji"><span
+                                class="check"></span>Jumanji(the one with the Rock)</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="cinderella"><input type="checkbox" id="cinderella" name="Movie"
+                                value="Live Action Cinderella"><span class="check"></span>Live Action Cinderella</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="story"><input type="checkbox" id="story" name="Movie"
+                                value="A Cinderella Story"><span class="check"></span>A Cinderella Story</label>
+                    </div>
+                    <h4>What acitvities sound fun to you? (if you think of another idea, please put it in the comments):
+                    </h4>
+                    <br>
+                    <div class="idea">
+                        <label for="ghost"><input type="checkbox" id="ghost" name="Activities"
+                                value="Ghost in the Graveyard"><span class="check"></span>Ghost in the Graveyard (when
+                            it gets dark enough)</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="karaoke"><input type="checkbox" id="karaoke" name="Activities" value="Karaoke"><span
+                                class="check"></span>Karaoke</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="charades"><input type="checkbox" id="charades" name="Activities"
+                                value="Charades"><span class="check"></span>Charades</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="jackbox"><input type="checkbox" id="jackbox" name="Activities" value="Jackbox"><span
+                                class="check"></span>Jackbox (I may not have all the games but we could figure something
+                            out)</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="kiss"><input type="checkbox" id="kiss" name="Activities"
+                                value="Kiss, Mary, Dump"><span class="check"></span>Kiss, Mary, Dump</label>
+                    </div>
+                    <br>
+                    <div class="idea">
+                        <label for="games"><input type="checkbox" id="games" name="Activities"
+                                value="Any other fun group games"><span class="check"></span>Any other fun group games
+                            like Missionary Tag, Human Knot, Who Am
+                            I, Ninja, etc.</label>
+                    </div>
+                    <label for="myComments">Comments:</label><textarea name="myComments" id="myComments" cols="20"
+                        rows="2"></textarea>
+                    <br>
+                    <button type="submit" id="mySubmit">Submit &nbsp;<span class="submit-arrow">&#10140;</span></button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2026 FunTimeWithFriends</p>
+        </footer>
+    </div>
+    <script>
+        window.addEventListener("pageshow", function () {
+            document.getElementById("contact-form").reset();
+        });
+    </script>
+</body>
+
+</html>
